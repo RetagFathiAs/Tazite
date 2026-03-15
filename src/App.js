@@ -6,7 +6,6 @@ import About from "./pages/About/About";
 import Header from "./components/Common/Header/Header";
 import Footer from "./components/Common/Footer/Footer";
 import Tours from "./pages/Tours/Tours";
-import Map from "./components/map/map"
 
 
 function App() {
@@ -17,12 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
-
         <Route path="/tours" element={<Tours />} />
-                <Route path="/tours" element={<Map />} />
-
-
-        
       </Routes>
       <Footer />
     </>
