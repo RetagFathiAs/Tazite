@@ -60,7 +60,7 @@
 
 .map-route {
   cursor: pointer;
-  transition: stroke-width 40px, opacity 50ms;
+  transition: stroke-width 100px, opacity 50ms;
 }
 
 .map-tooltip {
