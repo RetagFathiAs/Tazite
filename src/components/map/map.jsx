@@ -130,7 +130,7 @@ const roads = [
     subtitle: "Tripoli → Misrata → Sirte → Benghazi",
     description: "Explore the main coastal highway connecting major Libyan cities along the Mediterranean coast.",
     d: createRoute(routePoints.coastal_a1),
-    color: "#e331bf",
+    color: "#e331bf11",
     cardData: {
       image: "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=400&h=250&fit=crop",
       location: "Libya",
@@ -148,7 +148,7 @@ const roads = [
     subtitle: "Tripoli → Misrata → Sirte → Benghazi",
     description: "Explore the main coastal highway connecting major Libyan cities along the Mediterranean coast.",
     d: createRoute(routePoints.coastal_green),
-    color: "#28a451",
+    color: "#28a4511c",
     cardData: {
       image: "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=400&h=250&fit=crop",
       location: "Libya",
@@ -166,7 +166,7 @@ const roads = [
     subtitle: "Tripoli → Misrata → Sirte → Benghazi",
     description: "Explore the main coastal highway connecting major Libyan cities along the Mediterranean coast.",
     d: createRoute(routePoints.left_red),
-    color: "#d81b1b",
+    color: "#d81b1b12",
     cardData: {
       image: "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=400&h=250&fit=crop",
       location: "Libya",
@@ -184,7 +184,7 @@ const roads = [
     subtitle: "Tripoli → Al-Jufra → Benghazi",
     description: "A scenic route connecting the western and eastern coastal regions of Libya.",
     d: createRoute(routePoints.coastal_connector),
-    color: "#df24a7",
+    color: "#df24a700",
     cardData: {
       image: "https://images.unsplash.com/photo-1548013146-72479768bada?w=400&h=250&fit=crop",
       location: "Libya",
@@ -202,7 +202,7 @@ const roads = [
     subtitle: "Tripoli → Sabha → Ghat",
     description: "Journey through the ancient Fezzan region into the Sahara desert.",
     d: createRoute(routePoints.fezzan_route),
-    color: "#1c7ad8",
+    color: "#1c7ad825",
     cardData: {
       image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400&h=250&fit=crop",
       location: "Libya",
@@ -220,7 +220,7 @@ const roads = [
     subtitle: "Benghazi → Al-Wahat → Kufra",
     description: "Cross the stunning Sahara desert through ancient oases.",
     d: createRoute(routePoints.southern_route),
-    color: "#065d08",
+    color: "#065d0815",
     cardData: {
       image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400&h=250&fit=crop",
       location: "Libya",
