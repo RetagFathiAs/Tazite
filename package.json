@@ -2,7 +2,7 @@
   "name": "travel-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RetagFathiAs.github.io/Tazite",
+  "homepage": "https://retagfathias.github.io/home",
   "dependencies": {
     "@react-aria/ssr": "^3.9.10",
     "@testing-library/jest-dom": "^5.17.0",
