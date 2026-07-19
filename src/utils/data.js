@@ -97,11 +97,7 @@ export const popularsData = [
     image: Singapore,
     location: "European Way, Southampton, United Kingdom",
     category: ["Escorted Tour", "Rail Tour"],
-    days: "5 days - 4 nights",
-    price: 100,
-    afterDiscount: 92,
-    rating: 3,
-    reviews: 5,
+
   },
   {
     id: 1,
@@ -109,11 +105,7 @@ export const popularsData = [
     image: Kiwiana,
     location: "European Way, Southampton, United Kingdom",
     category: ["River Cruise", "Wildlife"],
-    days: "2 days - 1 nights",
-    price: 87,
-    afterDiscount: 82,
-    rating: 4,
-    reviews: 9,
+
   },
   {
     id: 2,
@@ -121,11 +113,7 @@ export const popularsData = [
     image: Quito,
     location: "European Way, Southampton, United Kingdom",
     category: ["Escorted Tour", "River Cruise"],
-    days: "2 days - 1 nights",
-    price: 87,
-    afterDiscount: 82,
-    rating: 4,
-    reviews: 9,
+
   },
   {
     id: 3,
@@ -133,11 +121,7 @@ export const popularsData = [
     image: Anchorage,
     location: "European Way, Southampton, United Kingdom",
     category: ["River Cruise", "Rail Tour"],
-    days: "unlimited",
-    price: 434,
-    afterDiscount: 0,
-    rating: 5,
-    reviews: 20,
+
   },
   {
     id: 4,
@@ -145,11 +129,7 @@ export const popularsData = [
     image: Cuzco,
     location: "European Way, Southampton, United Kingdom",
     category: ["River Cruise", "Tour & Cruise"],
-    days: "1 days - 9 hours",
-    price: 395,
-    afterDiscount: 0,
-    rating: 3,
-    reviews: 12,
+
   },
   {
     id: 5,
@@ -157,11 +137,7 @@ export const popularsData = [
     image: Ushuaia,
     location: "European Way, Southampton, United Kingdom",
     category: ["Escorted Tour", "Wildlife"],
-    days: "5 days - 4 nights",
-    price: 93,
-    afterDiscount: 0,
-    rating: 3,
-    reviews: 12,
+
   },
   {
     id: 6,
@@ -169,11 +145,7 @@ export const popularsData = [
     image: Santiago,
     location: "European Way, Southampton, United Kingdom",
     category: ["Escorted Tour", "Wildlife"],
-    days: "1 day - 1 night",
-    price: 42,
-    afterDiscount: 0,
-    rating: 5,
-    reviews: 18,
+
   },
   {
     id: 7,
@@ -181,11 +153,7 @@ export const popularsData = [
     image: Explorer,
     location: "European Way, Southampton, United Kingdom",
     category: ["Rail Tour", "Tour & Cruise"],
-    days: "1 night",
-    price: 99,
-    afterDiscount: 0,
-    rating: 4,
-    reviews: 22,
+
   },
 ];
 

@@ -1,6 +1,6 @@
 - 👋 # Welcome to Web Crafters! 🎨
 
-Hi there! I'm **Lucky Rawat**, a passionate software developer with over 4 years of experience in the field. Welcome to my GitHub repository, where I share code and resources related to the content on my YouTube channel, **Web Crafters**.
+Hi there! I'm Lucky Rawat, a passionate software developer with over 4 years of experience in the field. Welcome to my GitHub repository, where I share code and resources related to the content on my YouTube channel, **Web Crafters**.
 
 ## About the Channel
 

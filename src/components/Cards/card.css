@@ -63,7 +63,7 @@
     font-size: var(--bodyText);
     font-weight: bold;
     transition: all 0.5s ease 0s;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 
     
 }
@@ -90,7 +90,7 @@
 }
 
 .popular  .card-body .reviwe {
-    margin-bottom: 12px;
+    margin-bottom: 1px;
 }
 .popular  .card-body .reviwe i {
     color:var(--primaryClr)

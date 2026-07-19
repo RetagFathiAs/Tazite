@@ -68,11 +68,55 @@
 .tour_details .image-gallery-thumbnail.active {
   border-color: var(--primaryClr);
 }
+/* tours.css - centers the cards and keeps them responsive */
+
+/* Horizontal centering wrapper for cards */
+.cards-wrapper {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 24px;               /* space between columns */
+  flex-wrap: wrap;         /* wrap on small screens */
+  align-items: flex-start; /* change to center for vertical centering */
+  padding: 8px 0;
+}
+
+/* If you want vertical centering for the whole viewport, add this modifier */
+.cards-wrapper--center-vertical {
+  min-height: calc(100vh - 160px); /* adjust for header/footer */
+  align-items: center;
+}
+
+/* Make each ProductCard consistent width while remaining responsive */
+.cards-wrapper .product-with-slide {
+  width: 320px;    /* desired card width */
+  max-width: 100%;
+  margin: 0;
+}
+
+/* If ProductCard uses bootstrap column widths, ensure inner centering */
+.cards-wrapper .col {
+  display: flex;
+  justify-content: center;
+}
+
+/* Small-screen tweak */
+@media (max-width: 576px) {
+  .cards-wrapper {
+    gap: 12px;
+    padding: 6px 0;
+  }
+  .cards-wrapper .product-with-slide {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
 
 /* details */
 .tour_details .nav_bars {
   background: #f14b361a;
   padding: 8px;
+  
 }
 .tour_details .nav_bars .nav-link.active {
   background: var(--primaryClr);

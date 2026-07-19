@@ -39,18 +39,7 @@ function createRoute(points) {
 // DEFINE YOUR ROUTES HERE - Easy waypoints!
 // ============================================
 
-/**
- * Route definitions using simple waypoints
- * Just list the cities/points in order!
- * 
- * Map coordinates (849 x 861):
- * - Tripoli: x:100-150, y:120-150
- * - Misrata: x:280-320, y:150-180
- * - Sirte: x:400-450, y:180-200
- * - Benghazi: x:600-650, y:180-210
- * - Sabha: x:350-400, y:450-500
- * - Ghat: x:200-250, y:550-600
- */
+
 
 const routePoints = {
   Kufra_Awinat_JAGHBOUB : [
@@ -144,10 +133,7 @@ const roads = [
       image:image2,
       location: "Libya",
       routeName: "Libyan Coastal Highway (A1)",
-      rating: 4.8,
-      reviews: 124,
-      price: 450,
-      days: "7 Days",
+      
       category: "Tour"
     }
   },
@@ -162,10 +148,7 @@ const roads = [
       image: image3,
       location: "Libya",
       routeName: "Libyan Coastal Highway (A1)",
-      rating: 4.8,
-      reviews: 124,
-      price: 450,
-      days: "7 Days",
+     
       category: "Tour"
     }
   },
@@ -180,10 +163,7 @@ const roads = [
       image: image4,
       location: "Libya",
       routeName: "Libyan Coastal Highway (A1)",
-      rating: 4.8,
-      reviews: 124,
-      price: 450,
-      days: "7 Days",
+     
       category: "Tour"
     }
   },
@@ -198,11 +178,8 @@ const roads = [
       image: image5,
       location: "Libya",
       routeName: "Ghdames - AwinatConnector",
-      rating: 4.5,
-      reviews: 89,
-      price: 380,
-      days: "5 Days",
-      category: "Adventure"
+   
+      category: "Tour"
     }
   },
   {
@@ -216,11 +193,8 @@ const roads = [
       image: image7,
       location: "Libya",
       routeName: "Akakus_Massak Route",
-      rating: 4.9,
-      reviews: 67,
-      price: 650,
-      days: "10 Days",
-      category: "Escorted"
+   
+      category: "Tour"
     }
   },
   {
@@ -234,11 +208,8 @@ const roads = [
       image: image8,
       location: "Libya",
       routeName: "Sebha Desert Route",
-      rating: 4.6,
-      reviews: 45,
-      price: 520,
-      days: "8 Days",
-      category: "Adventure"
+     
+      category: "Tour"
     }
   },
 ];
@@ -370,13 +341,7 @@ export default function LibyaMapWithRoutes() {
                 </Card.Title>
                 <p className="route-card-subtitle">{active.subtitle}</p>
                 <p className="route-card-description">{active.description}</p>
-                <p className="reviwe">
-                  <span>
-                    <i className="bi bi-star-fill me-1"></i>
-                  </span>
-                  <span>{active.cardData.rating} </span>
-                  <span>( {active.cardData.reviews} reviews )</span>
-                </p>
+                
                 <span
                   className={
                     active.cardData.category.replace(/ .*/, "") + " badge"
@@ -387,12 +352,8 @@ export default function LibyaMapWithRoutes() {
               </Card.Body>
               <Card.Footer className="py-3">
                 <Stack direction="horizontal" className="justify-content-between mt-2">
-                  <p>
-                    From <b>${active.cardData.price}</b>
-                  </p>
-                  <p>
-                    <i className="bi bi-clock"></i> {active.cardData.days}
-                  </p>
+                  
+                 
                 </Stack>
               </Card.Footer>
             </Card>

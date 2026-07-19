@@ -1,0 +1,94 @@
+/* slide container */
+.product-with-slide {
+  position: relative;
+  overflow: visible;
+}
+
+/* viewport masks the track horizontally and animates height */
+.product-with-slide .slide-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  transition: height 280ms cubic-bezier(.2,.9,.2,1);
+}
+
+/* track now holds three panes */
+.product-with-slide .slide-track {
+  display: flex;
+  width: 300%;
+  transition: transform 360ms cubic-bezier(.2,.9,.2,1), opacity 220ms ease;
+  will-change: transform, opacity;
+}
+
+/* step classes move the track to show the correct pane */
+.product-with-slide .slide-track.step-0 {
+  transform: translateX(0%);
+}
+.product-with-slide .slide-track.step-1 {
+  transform: translateX(-33.3333%);
+}
+.product-with-slide .slide-track.step-2 {
+  transform: translateX(-66.6666%);
+}
+
+/* each pane occupies one third of the track (full card width) */
+.product-with-slide .slide-pane {
+  flex: 0 0 33.3333%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  padding: 0;
+  opacity: 1;
+  transition: opacity 220ms ease;
+}
+
+/* small left offset for pane B and C if you want a visual nudge (optional) */
+.product-with-slide .slide-pane.pane-b { padding-left: 6px; }
+.product-with-slide .slide-pane.pane-c { padding-left: 6px; }
+
+/* hide pointer events for hidden panes */
+.product-with-slide .slide-pane[aria-hidden="true"] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* image */
+.product-with-slide .card-img-top,
+.product-with-slide .img-fluid {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* keep existing checkbox and label styles (unchanged) */
+.product-with-slide .checkbox-options { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.product-with-slide .chkbox { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 8px; background: #f6f7fb; cursor: pointer; user-select: none; border: 1px solid transparent; transition: background 160ms, border-color 160ms, transform 120ms; flex: 0 0 auto; }
+.product-with-slide .chkbox input[type="checkbox"] { display: none; }
+.product-with-slide .chkbox.checked { background: linear-gradient(180deg, #fff 0%, #f8fbff 100%); border-color: var(--primaryClr, #2b7cff); box-shadow: 0 2px 6px rgba(43,124,255,0.12); transform: translateY(-2px); }
+.product-with-slide .checkbox-label { display: flex !important; justify-content: flex-start !important; align-items: center; gap: 8px; width: 100%; }
+.product-with-slide .selected-value { display: inline-block; margin-left: 8px; padding: 2px 8px; font-size: 13px; color: var(--primaryClr, #2b7cff); background: rgba(43,124,255,0.08); border-radius: 999px; min-width: 36px; text-align: center; }
+
+/* center title wrapper */
+.product-with-slide .center-title-wrapper { display: flex; justify-content: center; align-items: center; width: 100%; min-height: 72px; box-sizing: border-box; padding: 8px 12px; }
+.product-with-slide .center-title { margin: 0; text-align: center; font-weight: 600; font-size: 1.05rem; }
+
+/* contact form styles (simple) */
+.product-with-slide .contact-form { display: flex; flex-direction: column; gap: 8px; }
+.product-with-slide .form-label { font-size: 14px; margin-bottom: 6px; }
+.product-with-slide .form-input { height: 40px; padding: 8px 10px; border: 1px solid #dfe6ef; border-radius: 6px; font-size: 14px; outline: none; }
+.product-with-slide .field-hint { color: #d97706; font-size: 13px; min-height: 18px; }
+
+/* small spacing tweaks */
+.product-with-slide .card-body { padding-top: 12px; }
+.product-with-slide .card-footer { background: none; border-top: 1px solid rgba(0,0,0,0.04); }
+
+/* responsive */
+@media (max-width: 576px) {
+  .product-with-slide .slide-track { transition-duration: 260ms; }
+  .product-with-slide .card-body { padding: 12px; }
+  .product-with-slide .chkbox { padding: 8px 12px; }
+  .product-with-slide .center-title-wrapper { min-height: 60px; padding: 6px 10px; }
+  .product-with-slide .center-title { font-size: 1rem; }
+}

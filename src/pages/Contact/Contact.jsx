@@ -8,7 +8,7 @@ import {
   Form,
   FloatingLabel,
 } from "react-bootstrap";
-import image from "../../assets/images/new/contact-us.png";
+import image from "../../assets/images/new/contact-us.jpg";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 
 const Contact = () => {

@@ -21,104 +21,86 @@ import image8 from "../../assets/images/new/IMG_0481.jpeg";
 
 
 
+// src/components/utils/data.js
+// Keep your existing image imports at the top of this file (Singapore, Kiwiana, Quito, Anchorage, Cuzco, Ushuaia, Santiago, Explorer)
+
 export const popularsData = [
   {
     id: 0,
-    title : "Discover Singapore",
+    title: "Akakus - Massak",
+    location:
+      "Sebha - Awinat - Adad - Awiss - Tinlalin - Teshwint - Afzegar - Anshal - Tanshalt - Wan Casa - Massak - Eghaljewin Nebetigh - Matkndoush - Barjuj - Lakes - Sebha",
     image: Singapore,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["Escorted Tour", "Rail Tour"],
-    days: "5 days - 4 nights",
-    price: 100,
-    afterDiscount: 92,
-    rating: 3,
-    reviews: 5,
+    category: ["Desert Trips"],
+    details:
+      "It is here that the Sahara Desert offers up its most glorious gift. An officially designated natural museum, the Acacus region offers spectacular desert and mountain scenery. Rock paintings that extend back 10,000 years depict the development of human societies and the animal life that was once abundant in the Sahara, such as giraffe and elephant."
   },
   {
     id: 1,
-    title : "Kiwiana Panorama",
+    title: "Ghdames - Awinat",
+    location: "Ghdames - Bir Azar - Atshan - Tinhedan - Dewana - Mghedit - Awinat",
     image: Kiwiana,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["River Cruise", "Wildlife"],
-    days: "2 days - 1 nights",
-    price: 87,
-    afterDiscount: 82,
-    rating: 4,
-    reviews: 9,
+    category: ["Desert Trips"],
+    details:
+      "The Pearl Of The Desert. Located in south-western Libya Desert. For centuries Ghadames has been an important trading town for many caravans originated from and ended their journey at Ghadames. The old town is one of the best preserved Berber towns in Libya and has been placed under UNESCO protection; it is a place one cannot afford to miss."
   },
   {
     id: 2,
-    title : "Anchorage To Quito",
+    title: "Sebha - Waw - Baezima - Jalu",
+    location:
+      "Alnamous Sebha - Tmissa - Graret Amhmed - Waw Alkabier - Waw - Alnamous - Baezima - Jalu",
     image: Quito,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["Escorted Tour", "River Cruise"],
-    days: "2 days - 1 nights",
-    price: 87,
-    afterDiscount: 82,
-    rating: 4,
-    reviews: 9,
+    category: ["Desert Trips"],
+    details: ""
   },
   {
     id: 3,
-    title : "Anchorage To La Paz",
+    title: "Fugha - Waw Alnamous",
+    location: "Fugha - Black Mountains - Khlfalah - Wadi AlAteb - Waw Alnamous",
     image: Anchorage,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["River Cruise", "Rail Tour"],
-    days: "unlimited",
-    price: 434,
-    afterDiscount: 0,
-    rating: 5,
-    reviews: 20,
+    category: ["Desert Trips"],
+    details: ""
   },
   {
     id: 4,
-    title : "Cuzco To Anchorage",
+    title: "Zella - Black Mountains - Al Namous",
+    location: "Zella - Alharuj - Alateb - Waw Alnamous",
     image: Cuzco,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["River Cruise", "Tour & Cruise"],
-    days: "1 days - 9 hours",
-    price: 395,
-    afterDiscount: 0,
-    rating: 3,
-    reviews: 12,
+    category: ["Desert Trips"],
+    details: ""
   },
   {
     id: 5,
-    title : "Anchorage To Ushuaia",
+    title: "Kufra - Awinat - Jaghboub",
+    location:
+      "Kufra - Arkno - Jabalawinat - Sudan Border - Jabal Alhwaish - Sand Sea Desert - Jaghboub",
     image: Ushuaia,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["Escorted Tour", "Wildlife"],
-    days: "5 days - 4 nights",
-    price: 93,
-    afterDiscount: 0,
-    rating: 3,
-    reviews: 12,
+    category: ["Desert Trips"],
+    details: ""
   },
   {
     id: 6,
-    title : "Anchorage To Santiago",
+    title: "Tripolitanya  Cyrena Apollonia",
     image: Santiago,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["Escorted Tour", "Wildlife"],
-    days: "1 day - 1 night",
-    price: 42,
-    afterDiscount: 0,
-    rating: 5,
-    reviews: 18,
+    location: "Cyrena",
+    category: ["Coastal Trips"],
+    details: "The History And The Silent Treasures An Ancient City Near The Northern Coast Of Africa, In Cyrenaica. It Was A Greek Colony Founded ( C.630) By Aristotle Of Thera."
   },
   {
     id: 7,
-    title : "LA Explorer",
+    title: "T r i p o l i t a n y a - G h a d a m e s ",
     image: Explorer,
-    location: "European Way, Southampton, United Kingdom",
-    category: ["Rail Tour", "Tour & Cruise"],
+    location: "G h a d a m e s",
+    category: ["Coastal Trips"],
     days: "1 night",
     price: 99,
     afterDiscount: 0,
     rating: 4,
     reviews: 22,
-  },
+    details: "T h e  P e a r l  O f  T h e  D e s e r t Located In South- western Libya Desert. For Centuries Ghadames Has Been An Important Trading Town For Many Caravans Originated From And Ended Their Journey At Ghadames . The Old Town Is One Of The Best Preserved Berber Towns In Libya And Has Been Placed Under Unesco Protection; It Is A Place One Can Not Afford To Miss."
+  }
 ];
+
 
 export const tourDetails = {
   title : "Beautiful Bali with Malaysia",
