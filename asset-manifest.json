@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Tazite/static/css/main.9dfdef33.css",
-    "main.js": "/Tazite/static/js/main.d8252123.js",
+    "main.css": "/Tazite/static/css/main.94a9f9b0.css",
+    "main.js": "/Tazite/static/js/main.1b2e35ef.js",
     "static/css/815.7fc1bbbc.chunk.css": "/Tazite/static/css/815.7fc1bbbc.chunk.css",
     "static/js/815.c6948672.chunk.js": "/Tazite/static/js/815.c6948672.chunk.js",
     "static/media/IMG_0469.jpeg": "/Tazite/static/media/IMG_0469.c675b4d283baaa7281f3.jpeg",
@@ -52,6 +52,7 @@
     "static/media/IMG_0421.jpeg": "/Tazite/static/media/IMG_0421.ec0435ad35a7f7370ee3.jpeg",
     "static/media/44.JPG": "/Tazite/static/media/44.5a0ef14227b827533767.JPG",
     "static/media/46.JPG": "/Tazite/static/media/46.fce19b28023e4943a32c.JPG",
+    "static/media/contact-us.jpg": "/Tazite/static/media/contact-us.fce19b28023e4943a32c.jpg",
     "static/media/32.JPG": "/Tazite/static/media/32.438e5d1903a998917a93.JPG",
     "static/media/m 4.JPG": "/Tazite/static/media/m 4.208584a664be73762c8d.JPG",
     "static/media/18.JPG": "/Tazite/static/media/18.9c7c5da48d87950d74e4.JPG",
@@ -96,7 +97,6 @@
     "static/media/258cf9dd-cd15-4d99-923f-01c840153e80.JPG": "/Tazite/static/media/258cf9dd-cd15-4d99-923f-01c840153e80.bb6ab69e57772e4bec09.JPG",
     "static/media/d20d2ea8-d4ff-419d-83bc-7a1395597464.JPG": "/Tazite/static/media/d20d2ea8-d4ff-419d-83bc-7a1395597464.d419e9c2239200bd9ee2.JPG",
     "static/media/1f90745e-0932-4419-9dcc-b95ddc974846.JPG": "/Tazite/static/media/1f90745e-0932-4419-9dcc-b95ddc974846.81c80beba7d7e55c21cc.JPG",
-    "static/media/contact-us.png": "/Tazite/static/media/contact-us.67e502bd1e53b113d699.png",
     "static/media/WhatsApp Image 2026-04-01 at 23.32.13.jpeg": "/Tazite/static/media/WhatsApp Image 2026-04-01 at 23.32.13.8244c7b3c38292cc8d90.jpeg",
     "static/media/f84a87bc-33e8-42ec-b01a-b1d0edc8c57b.JPG": "/Tazite/static/media/f84a87bc-33e8-42ec-b01a-b1d0edc8c57b.6a23c149457bf5657273.JPG",
     "static/media/libya-map.jpeg": "/Tazite/static/media/libya-map.e04e8b3e3775fe2e557e.jpeg",
@@ -114,13 +114,13 @@
     "static/media/slick.ttf": "/Tazite/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Tazite/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Tazite/index.html",
-    "main.9dfdef33.css.map": "/Tazite/static/css/main.9dfdef33.css.map",
-    "main.d8252123.js.map": "/Tazite/static/js/main.d8252123.js.map",
+    "main.94a9f9b0.css.map": "/Tazite/static/css/main.94a9f9b0.css.map",
+    "main.1b2e35ef.js.map": "/Tazite/static/js/main.1b2e35ef.js.map",
     "815.7fc1bbbc.chunk.css.map": "/Tazite/static/css/815.7fc1bbbc.chunk.css.map",
     "815.c6948672.chunk.js.map": "/Tazite/static/js/815.c6948672.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dfdef33.css",
-    "static/js/main.d8252123.js"
+    "static/css/main.94a9f9b0.css",
+    "static/js/main.1b2e35ef.js"
   ]
 }
