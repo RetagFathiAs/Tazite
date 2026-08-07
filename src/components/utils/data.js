@@ -33,7 +33,7 @@ export const popularsData = [
     image: Singapore,
     category: ["Desert Trips"],
     details:
-      "It is here that the Sahara Desert offers up its most glorious gift. An officially designated natural museum, the Acacus region offers spectacular desert and mountain scenery. Rock paintings that extend back 10,000 years depict the development of human societies and the animal life that was once abundant in the Sahara, such as giraffe and elephant."
+      "Discover the Acacus: a breathtaking natural museum of desert and mountain vistas, where 10,000‑year‑old rock art brings ancient wildlife and human stories to life — an unforgettable, once‑in‑a‑lifetime adventure."
   },
   {
     id: 1,
@@ -42,7 +42,7 @@ export const popularsData = [
     image: Kiwiana,
     category: ["Desert Trips"],
     details:
-      "The Pearl Of The Desert. Located in south-western Libya Desert. For centuries Ghadames has been an important trading town for many caravans originated from and ended their journey at Ghadames. The old town is one of the best preserved Berber towns in Libya and has been placed under UNESCO protection; it is a place one cannot afford to miss."
+      "Ghadames, the Pearl of the Desert, is a UNESCO‑protected Berber town in southwestern Libya. Once a vital caravan hub, its beautifully preserved old town is a cultural treasure you simply cannot miss."
   },
   {
     id: 2,
@@ -97,14 +97,14 @@ export const popularsData = [
     afterDiscount: 0,
     rating: 4,
     reviews: 22,
-    details: "T h e  P e a r l  O f  T h e  D e s e r t Located In South- western Libya Desert. For Centuries Ghadames Has Been An Important Trading Town For Many Caravans Originated From And Ended Their Journey At Ghadames . The Old Town Is One Of The Best Preserved Berber Towns In Libya And Has Been Placed Under Unesco Protection; It Is A Place One Can Not Afford To Miss."
+    details: "T h e  P e a r l  O f  T h e  D e s e r t Located In South- western Libya Desert. For Centuries Ghadames Has Been An Important Trading Town For Many Caravans Originated From And Ended Their Journey At Ghadames . "
   }
 ];
 
 
 export const tourDetails = {
   title : "Beautiful Bali with Malaysia",
-  des: ` Bali, also known as the land of gods has plenty to offer to travelers from across the globe. As it so contrasted oh estimating instrument. Size like body some one had.  Are conduct viewing boy minutes warrant the expense?  Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted.  Lively use looked latter regard had. Do he it part more  last in. We understand that theory is important to build a solid foundation, we understand that theory alone isn’t going to get the job done so that’s why this is packed with practical hands-on examples that you can  follow step by step.`,
+  des: ` Bali, the land of gods, invites you with stunning temples, lush landscapes, and vibrant culture. More than just theory, this journey delivers hands‑on, step‑by‑step experiences designed to inspire and immerse you..`,
   tourInfo: [
     '<strong className="font-bold"> Place Covered</strong>: Bali - Ubud',
     ' <strong className="font-bold">Duration:</strong>5 Days, 4 Nights',

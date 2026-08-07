@@ -1,117 +1,216 @@
+/* card.css - fixed-height cards with scrollable body and stable layout */
 
 .popular {
-    padding: 5px;
-    border: none;
-    transition: all 0.5s ease 0s;
-    overflow: hidden;
+  padding: 5px;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  /* fixed card height so all cards are the same length */
+  height: 420px; /* adjust this value to your preferred card height */
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-sizing: border-box;
 }
 
-.popular:hover{
-    transform: translateY(-10px);
-    transition: 0.2s ease-in;
-    
+/* hover lift */
+.popular:hover {
+  transform: translateY(-10px);
+  transition: transform 0.2s ease-in;
 }
 
-
+/* title color on hover */
 .popular:hover .card-title {
-    color:var(--primaryClr)
+  color: var(--primaryClr);
 }
 
+/* image area: fixed height, cover, no stretching */
 .popular img {
-    transition: all 0.5s ease 0s;
+  transition: transform 0.5s ease;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+  height: 160px; /* image height inside the fixed card */
 }
 
+/* zoom effect on hover */
 .popular:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.popular  .card-body .badge {
-    padding: 4px 8px;
-    border-radius: 4px;
-    margin-right: 8px;
-    font-size: var(--bodyText);
+/* card body becomes scrollable when content overflows */
+.popular .card-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 12px;
+  -webkit-overflow-scrolling: touch;
 }
 
-
-
-.popular  .card-body .River{
-    background-color: #ffebf5 !important;
-    color:#cf3881 !important;
+/* keep footer pinned to the bottom */
+.popular .card-footer {
+  flex-shrink: 0;
+  background: none;
+  border-top: 1px solid rgba(0,0,0,0.04);
+  padding-top: 12px;
 }
 
-.popular  .card-body .Wildlife{
-    background-color: #4ba7fc !important;
-    color:#e6f7f4 !important;
+/* badges */
+.popular .card-body .badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-size: var(--bodyText);
 }
 
-.popular  .card-body .Escorted{
-    background-color: #e8edf1 !important;
-    color:#4f5e71 !important;
+/* category color classes */
+.popular .card-body .River {
+  background-color: #ffebf5 !important;
+  color: #cf3881 !important;
 }
 
-.popular .card-body .Rail{
-    background-color: #fc961b !important;
-    color:#ffffff !important;
+.popular .card-body .Wildlife {
+  background-color: #4ba7fc !important;
+  color: #e6f7f4 !important;
 }
 
-.popular  .card-body .Tour{
-    background-color: #6088c4 !important;
-    color:#ffffff !important;
+.popular .card-body .Escorted {
+  background-color: #e8edf1 !important;
+  color: #4f5e71 !important;
 }
 
-.popular .card-body .card-title{
-    font-size: var(--bodyText);
-    font-weight: bold;
-    transition: all 0.5s ease 0s;
-    margin-bottom: 1px;
-
-    
+.popular .card-body .Rail {
+  background-color: #fc961b !important;
+  color: #ffffff !important;
 }
 
+.popular .card-body .Tour {
+  background-color: #6088c4 !important;
+  color: #ffffff !important;
+}
+
+/* title */
+.popular .card-body .card-title {
+  font-size: var(--bodyText);
+  font-weight: bold;
+  transition: color 0.25s ease;
+  margin-bottom: 4px;
+}
+
+/* meta text inside body */
 .popular .card-body .card-text {
-    font-size: 13px;
-    padding: 10px 0px;
-    line-height: 1.3em;
-    position: relative;
-    color:#4f5e71;
+  font-size: 13px;
+  padding: 10px 0;
+  line-height: 1.3em;
+  position: relative;
+  color: #4f5e71;
 }
 
- 
-.popular  .card-body .card-text i {
-    position: absolute;
-    top: 15px;
+/* icon inside card-text */
+.popular .card-body .card-text i {
+  position: absolute;
+  top: 15px;
 }
 
-
+/* location text */
 .popular .card-body .text {
-    margin-left: 16px;
+  margin-left: 16px;
+  display: block;
+  font-size: 13px;
+}
+
+/* review block */
+.popular .card-body .reviwe {
+  margin-bottom: 1px;
+}
+.popular .card-body .reviwe i {
+  color: var(--primaryClr);
+}
+
+/* footer text */
+.popular .card-footer p {
+  font-size: var(--bodyText);
+  color: #4f5e71;
+}
+
+.popular .card-footer p strong {
+  font-size: var(--bodyText);
+  color: black;
+  font-weight: bold;
+}
+
+/* scrollbar styling for modern browsers (optional) */
+.popular .card-body::-webkit-scrollbar {
+  width: 8px;
+}
+.popular .card-body::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.12);
+  border-radius: 6px;
+}
+.popular .card-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+  .popular {
+    height: 480px; /* allow a bit more height on tablet */
+  }
+  .popular img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 420px) {
+  /* on very small screens revert to natural height if you prefer */
+  .popular {
+    height: auto;
     display: block;
-    font-size: 13px;
+  }
+  .popular img {
+    height: 200px;
+  }
+  .popular .card-body {
+    overflow: visible;
+    max-height: 220px;
+  }
 }
 
-.popular  .card-body .reviwe {
-    margin-bottom: 1px;
-}
-.popular  .card-body .reviwe i {
-    color:var(--primaryClr)
-}
-
-.popular  .card-footer  {
-    background: none;
+/* --- Optional: ensure slide panes inside the card respect the fixed height --- */
+/* If you use .product-with-slide inside .popular, make its viewport fill the available body area */
+.product-with-slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
 }
 
-.popular  .card-footer p  {
-    font-size: var(--bodyText);
-    color:#4f5e71
+.product-with-slide .slide-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  transition: height 280ms cubic-bezier(.2,.9,.2,1);
+  /* make viewport take the remaining space between image and footer */
+  flex: 1 1 auto;
 }
 
-.popular  .card-footer p strong {
-    font-size: var(--bodyText);
-    color:black;
-    font-weight: bold;
+.product-with-slide .slide-pane {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
+/* make pane body scrollable if its content is long */
+.product-with-slide .slide-pane .card-body {
+  overflow-y: auto;
+}
 
-
-
-
+/* small accessibility improvement: focus outline for inputs inside panes */
+.product-with-slide input:focus,
+.product-with-slide button:focus,
+.product-with-slide .chkbox:focus {
+  outline: 2px solid rgba(43,124,255,0.18);
+  outline-offset: 2px;
+}

@@ -33,12 +33,10 @@ header {
   z-index: 999;
   padding: 12px 0px;
   width: 100%;
-    font-size: 30px;
-
 }
 
 header .navbar .navbar-brand a {
-  font-size: 30px;
+  font-size: 22px;
   color: rgb(233, 229, 9);
   line-height: 150%;
   font-family: var(--fontFamily1);
@@ -48,13 +46,12 @@ header .navbar .navbar-brand a {
 }
 
 header .navbar .offcanvas-body a {
-  font-size: 25px;
+  font-size: var(--bodyText);
   color: rgb(233, 229, 9);
   line-height: 150%;
   font-family: var(--fontFamily);
   font-weight: bold;
   text-transform: uppercase;
-  text-align: right;
 }
 
 header .navbar .offcanvas-body a:hover {
